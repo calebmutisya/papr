@@ -9,6 +9,7 @@
   --color-myblack: #121213;
   --color-mywhite: #ffffff;
   --color-mygrey: #7B7B7B;
+  --color-mylightgrey: #F5F5F5;
   --color-textblack: #494E51;
   --color-textlight: #CECECE;
   --color-mypink: #FF2C54;
@@ -45,7 +46,7 @@ p{
   line-height: 30px;
 }
 
-li,a{
+li{
   cursor: pointer;
 }
 
@@ -72,9 +73,37 @@ li,a{
 .container{
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
+/* Hover Effects */
+.hover\:underline-animate {
+  position: relative;
+  cursor: pointer;
+}
+
+.hover\:underline-animate::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;             /* positions the underline at the bottom */
+  width: 100%;
+  height: 2px;           /* thickness of the underline */
+  background: currentColor; /* matches the text color */
+  transform: scaleX(0);  /* initially hidden */
+  transform-origin: left; /* animation will start from left */
+  transition: transform 0.3s ease;
+}
+
+.hover\:underline-animate:hover::after {
+  transform: scaleX(1);  /* reveal underline on hover */
+}
+
+
 /* Navbar Starts */
+.navlinks li{
+  font-family: var(--font-poppins);
+}
 
 /* Navbar Ends */

@@ -32,7 +32,9 @@ export default function RootLayout({
         className={`${poppins.variable} ${roboto.variable} antialiased`}
       >
         <Navbar/>
-        {children}
+        <div className="min-h-screen">
+          {children}
+        </div>
       </body>
     </html>
   );

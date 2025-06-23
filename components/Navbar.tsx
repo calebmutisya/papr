@@ -6,6 +6,10 @@ import { FaTwitter } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import {FaLinkedin} from "react-icons/fa";
 
+import { CiSearch } from "react-icons/ci";
+import { CiMenuBurger } from "react-icons/ci";
+
+
 function Navbar() {
   return (
     <header>
@@ -28,10 +32,27 @@ function Navbar() {
                 </ul>
             </div>
         </div>
-        <nav>
-            <Image src="/logo-black.svg" alt="logo" width={102} height={34}/>
-        </nav>
-      Navbar
+        <div className=' border-solid border-1  border-b border-textlight'>
+            <nav className='container py-[22px] lg:py-[0px] flex justify-between items-center'>
+                <div className='flex flex-row items-center'>
+                    <Image src="/logo-black.svg" alt="logo" width={102} height={34}/>
+                    <ul className='navlinks hidden lg:flex flex-row items-center pl-[44px] '>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px] '><span className='hover:underline-animate'>Home</span></li>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'><span className='hover:underline-animate'>Fashion</span></li>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'><span className='hover:underline-animate'>Lifestyle</span></li>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'><span className='hover:underline-animate'>Technology</span></li>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'><span className='hover:underline-animate'>Sports</span></li>
+                    </ul>
+                </div>
+                
+                <div className='flex flex-row items-center'>
+                    <CiSearch size={24} className='mr-[20px] cursor-pointer hover:text-mypink'/>
+                    <div className='py-[8px] px-[10px] hover:bg-mylightgrey transition ease-in duration-300 cursor-pointer rounded-full'>
+                        <CiMenuBurger size={24} />
+                    </div>   
+                </div>
+            </nav>
+        </div>
     </header>
   )
 }
