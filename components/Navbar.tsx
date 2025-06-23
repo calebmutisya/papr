@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
+import Link from 'next/link';
 
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from 'react-icons/fa';
@@ -35,13 +36,35 @@ function Navbar() {
         <div className=' border-solid border-1  border-b border-textlight'>
             <nav className='container py-[22px] lg:py-[0px] flex justify-between items-center'>
                 <div className='flex flex-row items-center'>
-                    <Image src="/logo-black.svg" alt="logo" width={102} height={34}/>
+                    <Link href="/">
+                        <Image src="/logo-black.svg" alt="logo" width={102} height={34}/>
+                    </Link>
                     <ul className='navlinks hidden lg:flex flex-row items-center pl-[44px] '>
-                        <li className='font-[500] mr-[34px] py-[30px] px-[5px] '><span className='hover:underline-animate'>Home</span></li>
-                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'><span className='hover:underline-animate'>Fashion</span></li>
-                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'><span className='hover:underline-animate'>Lifestyle</span></li>
-                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'><span className='hover:underline-animate'>Technology</span></li>
-                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'><span className='hover:underline-animate'>Sports</span></li>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px] '>
+                            <Link href="/" className='hover:underline-animate'>
+                                Home
+                            </Link>
+                        </li>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'>
+                            <Link href="/category/fashion" className='hover:underline-animate'>
+                                Fashion
+                            </Link>
+                        </li>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'>
+                            <Link href="/category/lifestyle" className='hover:underline-animate'>
+                                Lifestyle
+                            </Link>
+                        </li>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'>
+                            <Link href="/category/technology" className='hover:underline-animate'>
+                                Technology
+                            </Link>
+                        </li>
+                        <li className='font-[500] mr-[34px] py-[30px] px-[5px]'>
+                            <Link href="/category/sports" className='hover:underline-animate'>
+                                Sports
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 
