@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 import { FaFacebook } from "react-icons/fa";
@@ -27,7 +28,9 @@ function Navbar() {
                 </ul>
             </div>
         </div>
-        
+        <nav>
+            <Image src="/logo-black.svg" alt="logo" width={102} height={34}/>
+        </nav>
       Navbar
     </header>
   )
