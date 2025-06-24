@@ -13,6 +13,10 @@
   --color-textblack: #494E51;
   --color-textlight: #CECECE;
   --color-mypink: #FF2C54;
+  --color-myblue: #007AFF;
+
+  --font-poppins: 'Poppins', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
 }
 
 /* Text Color */
@@ -20,6 +24,7 @@
 h1,h2,h3,h4,h5,h6{
   color: var(--color-myblack);
   font-family: var(--font-poppins);
+  font-weight: 600;
 }
 
 p,a{

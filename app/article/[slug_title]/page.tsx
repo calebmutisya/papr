@@ -1,11 +1,11 @@
 import React from 'react'
 
-function BlogCard() {
+function Article() {
   return (
     <div>
-      BlogCard
+      
     </div>
   )
 }
 
-export default BlogCard
+export default Article

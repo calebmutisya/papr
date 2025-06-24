@@ -1,10 +1,17 @@
 import Image from "next/image";
+import TopCard from "@/components/ui/TopCard";
 
 export default function Home() {
   return (
     <div className="container">
-      <h1>Lorem ipsum </h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates? Quam laborum velit voluptates labore, deleniti minima corrupti aut laudantium in sapiente porro fuga autem illo, placeat maxime modi possimus?</p>
+      {/* Hero */}
+      <section className="pt-[15px] pb-[30px] lg:pt-[60px] flex flex-col lg:flex-row justify-between ">
+        <TopCard />
+        <div className="mt-[30px] lg:mt-0">
+          <h2 className="mb-[30px] w-fit hover:underline-animate">Recent News</h2>
+          <TopCard/>
+        </div>
+      </section>
     </div>
   );
 }
