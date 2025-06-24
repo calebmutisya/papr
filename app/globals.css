@@ -7,6 +7,7 @@
 
 @theme {
   --color-myblack: #121213;
+  --color-translucentblack: rgba(0, 0, 0, 0.7);
   --color-mywhite: #ffffff;
   --color-mygrey: #7B7B7B;
   --color-mylightgrey: #F5F5F5;
@@ -98,10 +99,12 @@ li{
   transition: background-size 0.6s ease;
 }
 
-/* This selector should work - no changes needed here */
 .articlecard:hover .underline-lines {
   background-size: 100% 2px;
 }
+
+
+/* Hover Effects Ends */
 
 /* Navbar Starts */
 .navlinks li a{
