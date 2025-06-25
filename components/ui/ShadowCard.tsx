@@ -7,7 +7,7 @@ import surfer from '../../assets/surfer.webp'
 function ShadowCard() {
   return (
     <Link href='#'>
-      <div className='relative articlecard min-w-[300px] max-w-[540px] h-[440px] overflow-hidden'>
+      <div className='relative articlecard min-w-[375px] max-w-[740px] h-[440px] overflow-hidden'>
         {/* Background image */}
         <Image
           src={surfer}
